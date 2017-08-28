@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\ambar\Desktop\R2A_Simulator_GUI\R2A_Simulator.prj" location="C:\Users\ambar\Desktop\R2A_Simulator_GUI" name="R2A_Simulator" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration file="C:\Users\ambar\Google Drive\GitHub\R2A_Simulator_GUI\R2A_Simulator.prj" location="C:\Users\ambar\Google Drive\GitHub\R2A_Simulator_GUI" name="R2A_Simulator" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>R2A_Simulator</param.appname>
     <param.icon>${PROJECT_ROOT}\R2A_Simulator_resources\icon.ico</param.icon>
     <param.icons>
@@ -8,7 +8,7 @@
       <file>${PROJECT_ROOT}\R2A_Simulator_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\R2A_Simulator_resources\icon_16.png</file>
     </param.icons>
-    <param.version>1.2</param.version>
+    <param.version>1.3</param.version>
     <param.authnamewatermark>Mission Analysis IPT</param.authnamewatermark>
     <param.email>crd@skywarder.eu</param.email>
     <param.company>Skyward Experimental Rocketry</param.company>
@@ -81,9 +81,9 @@
     <fileset.package />
     <fileset.depfun />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\R2A_Simulator\for_testing" name="readme.txt" optional="true">C:\Users\ambar\Desktop\R2A_Simulator_GUI\R2A_Simulator\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\R2A_Simulator\for_testing" name="R2A_Simulator.exe" optional="false">C:\Users\ambar\Desktop\R2A_Simulator_GUI\R2A_Simulator\for_testing\R2A_Simulator.exe</file>
-      <file location="${PROJECT_ROOT}\R2A_Simulator\for_testing" name="splash.png" optional="false">C:\Users\ambar\Desktop\R2A_Simulator_GUI\R2A_Simulator\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\R2A_Simulator\for_testing" name="splash.png" optional="false">C:\Users\ambar\Google Drive\GitHub\R2A_Simulator_GUI\R2A_Simulator\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\R2A_Simulator\for_testing" name="R2A_Simulator.exe" optional="false">C:\Users\ambar\Google Drive\GitHub\R2A_Simulator_GUI\R2A_Simulator\for_testing\R2A_Simulator.exe</file>
+      <file location="${PROJECT_ROOT}\R2A_Simulator\for_testing" name="readme.txt" optional="true">C:\Users\ambar\Google Drive\GitHub\R2A_Simulator_GUI\R2A_Simulator\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>

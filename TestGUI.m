@@ -149,7 +149,37 @@ set(handles.text17, 'String', ['time on lunchpad = ', num2str(T(iexit)), ' sec']
 set(handles.hg_led, 'Visible', 'off')
 set(handles.logo_fig, 'Visible', 'on')
 
+handles.f1 = figure(1);
+set(handles.f1, 'Visible', 'off')
+handles.f2 = figure(2);
+set(handles.f2, 'Visible', 'off')
+handles.f3 = figure(3);
+set(handles.f3, 'Visible', 'off')
+handles.f4 = figure(4);
+set(handles.f4, 'Visible', 'off')
+handles.f5 = figure(5);
+set(handles.f5, 'Visible', 'off')
+handles.f6 = figure(6);
+set(handles.f6, 'Visible', 'off')
+handles.f7 = figure(7);
+set(handles.f7, 'Visible', 'off')
+handles.f8 = figure(8);
+set(handles.f8, 'Visible', 'off')
+handles.f9 = figure(9);
+set(handles.f9, 'Visible', 'off')
+handles.f10 = figure(10);
+set(handles.f10, 'Visible', 'off')
+handles.f11 = figure(11);
+set(handles.f11, 'Visible', 'off')
+handles.f12 = figure(12);
+set(handles.f12, 'Visible', 'off')
+handles.f13 = figure(13);
+set(handles.f13, 'Visible', 'off')
+handles.f14 = figure(14);
+set(handles.f14, 'Visible', 'off')
+
 handles.fired = true;
+
 guidata(hObject,handles);
 
 clc
@@ -475,8 +505,9 @@ if get(hObject,'Value')
     set(handles.logo_fig, 'Visible', 'off')
     set(handles.hg_led, 'Visible', 'off')
     set(handles.cross_led, 'Visible', 'on')
+    handles.fired = false;
 end
-
+guidata(hObject,handles);
 
 % --- Executes on button press in data.
 function data_Callback(hObject, eventdata, handles)
@@ -571,31 +602,104 @@ str = get(hObject,'String');
 val = get(hObject,'Value');
 
 if handles.fired
+        
 set(0, 'DefaultFigureVisible', 'on')
 
 switch str{val}
     case 'Dynamics'
-        figure(1)
-        figure(2)
-        figure(3)
-        figure(4)
-        figure(13)
+        set(handles.f1, 'Visible', 'on')
+        set(handles.f2, 'Visible', 'on')
+        set(handles.f3, 'Visible', 'on')
+        set(handles.f4, 'Visible', 'on')
+        set(handles.f5, 'Visible', 'off')
+        set(handles.f6, 'Visible', 'off')
+        set(handles.f7, 'Visible', 'off')
+        set(handles.f8, 'Visible', 'off')
+        set(handles.f9, 'Visible', 'off')
+        set(handles.f10, 'Visible', 'off')
+        set(handles.f11, 'Visible', 'off')
+        set(handles.f12, 'Visible', 'off')
+        set(handles.f13, 'Visible', 'on')
+        set(handles.f14, 'Visible', 'off')
     case 'Trajectory'
-        figure(5)
-        figure(6)
-        figure(7)
+        set(handles.f1, 'Visible', 'off')
+        set(handles.f2, 'Visible', 'off')
+        set(handles.f3, 'Visible', 'off')
+        set(handles.f4, 'Visible', 'off')
+        set(handles.f5, 'Visible', 'on')
+        set(handles.f6, 'Visible', 'on')
+        set(handles.f7, 'Visible', 'on')
+        set(handles.f8, 'Visible', 'off')
+        set(handles.f9, 'Visible', 'off')
+        set(handles.f10, 'Visible', 'off')
+        set(handles.f11, 'Visible', 'off')
+        set(handles.f12, 'Visible', 'off')
+        set(handles.f13, 'Visible', 'off')
+        set(handles.f14, 'Visible', 'off')
     case 'Angular Rates'
-        figure(8)
-        figure(9)
+        set(handles.f1, 'Visible', 'off')
+        set(handles.f2, 'Visible', 'off')
+        set(handles.f3, 'Visible', 'off')
+        set(handles.f4, 'Visible', 'off')
+        set(handles.f5, 'Visible', 'off')
+        set(handles.f6, 'Visible', 'off')
+        set(handles.f7, 'Visible', 'off')
+        set(handles.f8, 'Visible', 'on')
+        set(handles.f9, 'Visible', 'on')
+        set(handles.f10, 'Visible', 'off')
+        set(handles.f11, 'Visible', 'off')
+        set(handles.f12, 'Visible', 'off')
+        set(handles.f13, 'Visible', 'off')
+        set(handles.f14, 'Visible', 'off')
     case 'Aerodynamic Angles'
-        figure(10)
-        figure(11)
-        figure(12)
+        set(handles.f1, 'Visible', 'off')
+        set(handles.f2, 'Visible', 'off')
+        set(handles.f3, 'Visible', 'off')
+        set(handles.f4, 'Visible', 'off')
+        set(handles.f5, 'Visible', 'off')
+        set(handles.f6, 'Visible', 'off')
+        set(handles.f7, 'Visible', 'off')
+        set(handles.f8, 'Visible', 'off')
+        set(handles.f9, 'Visible', 'off')
+        set(handles.f10, 'Visible', 'on')
+        set(handles.f11, 'Visible', 'on')
+        set(handles.f12, 'Visible', 'on')
+        set(handles.f13, 'Visible', 'off')
+        set(handles.f14, 'Visible', 'off')
     case 'Temperature Profile'
-        figure(14)
+        set(handles.f1, 'Visible', 'off')
+        set(handles.f2, 'Visible', 'off')
+        set(handles.f3, 'Visible', 'off')
+        set(handles.f4, 'Visible', 'off')
+        set(handles.f5, 'Visible', 'off')
+        set(handles.f6, 'Visible', 'off')
+        set(handles.f7, 'Visible', 'off')
+        set(handles.f8, 'Visible', 'off')
+        set(handles.f9, 'Visible', 'off')
+        set(handles.f10, 'Visible', 'off')
+        set(handles.f11, 'Visible', 'off')
+        set(handles.f12, 'Visible', 'off')
+        set(handles.f13, 'Visible', 'off')
+        set(handles.f14, 'Visible', 'on')
+    case 'Hide ALL Graphs'
+        set(handles.f1, 'Visible', 'off')
+        set(handles.f2, 'Visible', 'off')
+        set(handles.f3, 'Visible', 'off')
+        set(handles.f4, 'Visible', 'off')
+        set(handles.f5, 'Visible', 'off')
+        set(handles.f6, 'Visible', 'off')
+        set(handles.f7, 'Visible', 'off')
+        set(handles.f8, 'Visible', 'off')
+        set(handles.f9, 'Visible', 'off')
+        set(handles.f10, 'Visible', 'off')
+        set(handles.f11, 'Visible', 'off')
+        set(handles.f12, 'Visible', 'off')
+        set(handles.f13, 'Visible', 'off')
+        set(handles.f14, 'Visible', 'off')
     otherwise
 end
 end
+guidata(hObject,handles);
 
 % --- Executes during object creation, after setting all properties.
 function select_plot_CreateFcn(hObject, eventdata, handles)
